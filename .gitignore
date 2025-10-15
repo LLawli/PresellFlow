@@ -1,0 +1,7 @@
+pyproject.toml
+pages/
+__pycache__/
+*.pyc
+.env*
+.venv/
+uv.lock
