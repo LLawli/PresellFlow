@@ -3,25 +3,60 @@
 annotated-types==0.7.0
     # via pydantic
 anyio==4.11.0
-    # via starlette
+    # via
+    #   httpx
+    #   starlette
+beautifulsoup4==4.14.2
+    # via html-sanitizer
+certifi==2025.10.5
+    # via
+    #   httpcore
+    #   httpx
 click==8.3.0
     # via uvicorn
+csscompressor==0.9.5
+    # via presellflow (pyproject.toml)
+dotenv==0.9.9
+    # via presellflow (pyproject.toml)
 fastapi==0.119.0
     # via presellflow (pyproject.toml)
 h11==0.16.0
-    # via uvicorn
+    # via
+    #   httpcore
+    #   uvicorn
+html-sanitizer==2.6.0
+    # via presellflow (pyproject.toml)
+httpcore==1.0.9
+    # via httpx
+httpx==0.28.1
+    # via presellflow (pyproject.toml)
 idna==3.11
-    # via anyio
+    # via
+    #   anyio
+    #   httpx
+jsmin==3.0.1
+    # via presellflow (pyproject.toml)
+lxml==6.0.2
+    # via
+    #   html-sanitizer
+    #   lxml-html-clean
+lxml-html-clean==0.4.3
+    # via html-sanitizer
 pydantic==2.12.2
     # via fastapi
 pydantic-core==2.41.4
     # via pydantic
+python-dotenv==1.1.1
+    # via dotenv
 sniffio==1.3.1
     # via anyio
+soupsieve==2.8
+    # via beautifulsoup4
 starlette==0.48.0
     # via fastapi
 typing-extensions==4.15.0
     # via
+    #   beautifulsoup4
     #   fastapi
     #   pydantic
     #   pydantic-core
