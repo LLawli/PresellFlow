@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.routes import pages, api
+from app.routes import pages, api, seo
 
 def create_app() -> FastAPI:
     app = FastAPI()
@@ -15,5 +15,6 @@ def create_app() -> FastAPI:
     
     app.include_router(api.router)
     app.include_router(pages.router)
+    app.include_router(seo.router)
 
     return app
